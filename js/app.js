@@ -30,7 +30,8 @@ if (value.classList.contains('btn-left')){
 // set if else statement for right
 if (value.classList.contains('btn-right')){
   counter++;
-  if (counter > pictures.length - 1) {
+  if (counter > pictures.length - 1)
+ {
     counter = 0;
   }
   console.log(counter);
