@@ -27,6 +27,15 @@ if (value.classList.contains('btn-left')){
   console.log(counter);
   document.querySelector('.img-container').style.backgroundImage = `url('img/${pictures[counter]}.jpeg')`
 }
+// set if else statement for right
+if (value.classList.contains('btn-right')){
+  counter++;
+  if (counter > pictures.length - 1) {
+    counter = 0;
+  }
+  console.log(counter);
+  document.querySelector('.img-container').style.backgroundImage = `url('img/${pictures[counter]}.jpeg')`
+}
   })
 })
 })();
